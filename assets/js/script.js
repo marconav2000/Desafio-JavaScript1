@@ -2,6 +2,7 @@ const precio = 400000
 let total = 0
 let cantidad = 0
 
+
 precioProducto = document.querySelector("#precio-producto");
 precioProducto.innerHTML = precio
 
@@ -14,7 +15,6 @@ btnSumar = document.querySelector("#sumar")
 btnRestar = document.querySelector("#restar")
 
 
-
 btnSumar.addEventListener('click', () => {
     cantidad += 1
     cantidadProducto.innerHTML = cantidad
@@ -23,9 +23,7 @@ btnSumar.addEventListener('click', () => {
 }
 )
 
-btnRestar.addEventListener('click', () => {
-    
-
+btnRestar.addEventListener('click', () => {    
 
 if (cantidad < 1) {
     cantidad = 0
@@ -33,8 +31,6 @@ if (cantidad < 1) {
 else {
     cantidad -= 1
 }
-
-
 
 cantidadProducto.innerHTML = cantidad
 total = precio * cantidad
